@@ -1,0 +1,358 @@
+style {
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* bs para nav */
+.container-fluid {
+    background-image: url(../assets/ropa-negra.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64rem;
+    text-align: center;
+}
+.col-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col-10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* menu hamburguesa con bs para index*/
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dropdown-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: #d9d9d9;
+}
+.button {
+    border: 0 solid;
+}
+/* menu hamburguesa */
+.nav-dropdown {
+    position: relative; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    animation:a 6s infinite;
+    transition: all .5s ease;
+}
+.drop-button {
+    padding: .625rem;
+    border: none; 
+    cursor: pointer; 
+    background-color: none;
+    color: none;
+    animation:a 6s infinite;
+    transition: all .5s ease;
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #d9d9d9; 
+    color: black;
+    min-width: 10rem; 
+    box-shadow: 0rem .5rem 1rem 0rem black; 
+    z-index: 1; 
+    animation:a 6s infinite;
+    transition: all .5s ease;
+}
+.dropdown-content a {
+    font-size: .75rem;
+    color: black; 
+    padding: .75rem 1rem; 
+    text-decoration: none; 
+    text-transform: uppercase;
+    display: block; 
+    animation:a 6s infinite;
+    transition: all .5s ease;
+}
+.dropdown-content a:hover {
+    background-color: white; /* Color de fondo de los enlaces al pasar el mouse */
+    animation:a 6s infinite;
+    transition: all .5s ease;
+}
+.nav-dropdown:hover .dropdown-content {
+    display: block; /* Muestra el contenido del dropmenu al pasar el mouse */
+    animation:a 6s infinite;
+    transition: all .5s ease;
+}
+.logo {
+    margin: 0 1.25rem; /* Espacio entre el logo y los demás elementos */
+}
+.logo img{
+    width: 100%;
+}
+.icon {
+    margin: 0 1.25rem; /* Espacio entre el icono y los demás elementos */
+}
+/* Footer para todos */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: "LibreFranklin", sans-serif;
+    font-size: .75rem; 
+    color: black;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+.foot {
+    text-decoration: none;
+    color: black;
+}
+.foot a {
+    text-decoration: none;
+    color: black;
+}
+.formControlInput {
+    text-decoration: none;
+    width: 3.125rem;
+    border: 0 solid;
+}
+.form-label {
+    border: 0 solid;
+    text-decoration: none;
+    width: 3.125rem;
+}
+/* cards */
+.card-img-top {
+    background-color: black;
+}
+.card-body {
+    background-color: black;
+}
+.card-body {
+    color: #d9d9d9;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+}
+/* navbar */
+.navBar-index {
+    text-decoration: none;
+    font-family: "LibreFranklin", sans-serif;
+    font-size: 0.75rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.navBar-index a {
+    text-decoration: none;
+    color: black;
+    text-transform: first-letter;
+}
+/* header resto */
+.resto {
+    background-color: black;
+    padding: 1rem;
+    align-items: top;
+    align-items: center;
+    justify-content: space-between;
+}
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "rayita logo bolsa";
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+.rayita {
+    grid-area: rayita;
+}
+.logo {
+    grid-area: logo;
+}
+.bolsa {
+    grid-area: bolsa;
+}
+/* articles */
+.container-tienda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "article-1 article-2 article-3 article-4";
+    width: 100%;
+    text-decoration: none;
+    font-family: "LibreFranklin", sans-serif;
+    font-size: 1rem; 
+    background-color: black;
+    color: #D9D9D9;
+    justify-items: space-between;
+    align-items: center;
+}
+.article-1 {
+    grid-area: article-1;
+    border: solid .0625rem #D9D9D9;
+    width: 18.75rem;
+    height: 25rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.article-2 {
+    grid-area: article-2;
+    border: solid .0625rem #D9D9D9;
+    width: 18.75rem;
+    height: 25rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}.article-3 {
+    grid-area: article-3;
+    border: solid .0625rem #D9D9D9;
+    width: 18.75rem;
+    height: 25rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}.article-4 {
+    grid-area: article-4;
+    border: solid .0625rem #D9D9D9;
+    width: 18.75rem;
+    height: 25rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+@media(max-width:2560px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "article-1 article-2 article-3 article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+@media(max-width:1440px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: 
+        "article-1 article-2"
+        "article-3 article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+@media(max-width:1024px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2;
+        grid-template-areas: 
+        "article-1 article-2"
+        "article-3 article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+@media(max-width:768px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+        grid-template-areas: 
+        "article-1"
+        "article-2"
+        "article-3" 
+        "article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+@media(max-width:425px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+        grid-template-areas: 
+        "article-1"
+        "article-2"
+        "article-3" 
+        "article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+@media(max-width:375px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+        grid-template-areas: 
+        "article-1"
+        "article-2"
+        "article-3" 
+        "article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+@media(max-width:320px){
+    .container-tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+        grid-template-areas: 
+        "article-1"
+        "article-2"
+        "article-3" 
+        "article-4";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+    4k : 2560px
+    laptop L: 1440px
+    laptop: 1024
+    Tablet: 768px
+    móvil L: 425px
+    mobile M: 375px
+    mobile S: 320px
