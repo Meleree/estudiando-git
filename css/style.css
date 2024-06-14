@@ -110,8 +110,20 @@ style {
 .icon {
     margin: 0 1.25rem; /* Espacio entre el icono y los demás elementos */
 }
+/* nosotros */
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    font-family: "LibreFranklin", sans-serif;
+    font-size: 1rem; 
+    background-color: black;
+    color: #D9D9D9;
+    align-items: center;   
+}
 /* Local */
-
 .local {
     display: grid;
     grid-template-columns: 1fr;
@@ -341,7 +353,7 @@ footer {
 .detalle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 16;
+    grid-template-rows: 31, auto;
     grid-template-areas: 
     "detalle-3 detalle-3"
     "detalle-4 detalle-4"
@@ -626,7 +638,7 @@ footer {
 .carrito-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 16;
+    grid-template-rows: 16, auto;
     grid-template-areas: 
     "carrito-1 carrito-1"
     "carrito-2 carrito-3"
@@ -789,20 +801,91 @@ footer {
     .container-tienda{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 2;
+        grid-template-rows: 2, auto;
         grid-template-areas: 
         "article-1 article-2 article-3 article-4"
         "article-5 article-6 article-7 article-8";
         width: 100%;
         align-items: center;
         justify-items: center;
+    }    
+    .detalle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 31, auto;
+        grid-template-areas: 
+        "detalle-3 detalle-3"
+        "detalle-4 detalle-4"
+        "detalle-1 detalle-5"
+        "detalle-1 detalle-6"
+        "detalle-1 detalle-7"
+        "detalle-1 detalle-8"
+        "detalle-1 detalle-9"
+        "detalle-1 detalle-10"
+        "detalle-1 detalle-11"
+        "detalle-1 detalle-12"
+        "detalle-1 detalle-13"
+        "detalle-1 detalle-14"
+        "detalle-2 detalle-15"
+        "detalle-2 detalle-16"
+        "detalle-2 detalle-17"
+        "detalle-2 detalle-18"
+        "detalle-2 detalle-19"
+        "detalle-2 detalle-20"
+        "detalle-2 detalle-21"
+        "detalle-2 detalle-22"
+        "detalle-2 detalle-23"
+        "detalle-2 detalle-24"
+        "detalle-34 detalle-25"
+        "detalle-34 detalle-26"
+        "detalle-34 detalle-27"
+        "detalle-34 detalle-28"
+        "detalle-34 detalle-29"
+        "detalle-34 detalle-30"
+        "detalle-34 detalle-31"
+        "detalle-34 detalle-32"
+        "detalle-34 detalle-33";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
     }
+    .carrito-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 16, auto;
+        grid-template-areas: 
+        "carrito-1 carrito-1"
+        "carrito-2 carrito-3"
+        "carrito-2 carrito-4"
+        "carrito-2 carrito-5"
+        "carrito-2 carrito-6"
+        "carrito-2 carrito-7"
+        "carrito-18 carrito-8"
+        "carrito-18 carrito-9"
+        "carrito-18 carrito-10"
+        "carrito-18 carrito-11"
+        "carrito-18 carrito-12"
+        "carrito-19 carrito-13"
+        "carrito-19 carrito-14"
+        "carrito-19 carrito-15"
+        "carrito-19 carrito-16"
+        "carrito-19 carrito-17";
+        width: 100%;
+        text-decoration: none;
+        font-family: "LibreFranklin", sans-serif;
+        font-size: 1rem; 
+        background-color: black;
+        color: #D9D9D9;
+        justify-items: space-between;
+        align-items: center;
+    }
+
 }
 @media(max-width:1440px){
     .container-tienda{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 4;
+        grid-template-rows: 4, auto;
         grid-template-areas: 
         "article-1 article-2"
         "article-3 article-4"
@@ -811,13 +894,86 @@ footer {
         width: 100%;
         align-items: center;
         justify-items: center;
+    }
+    .detalle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 31, auto;
+        grid-template-areas: 
+        "detalle-3 detalle-3"
+        "detalle-4 detalle-4"
+        "detalle-1 detalle-5"
+        "detalle-1 detalle-6"
+        "detalle-1 detalle-7"
+        "detalle-1 detalle-8"
+        "detalle-1 detalle-9"
+        "detalle-1 detalle-10"
+        "detalle-1 detalle-11"
+        "detalle-1 detalle-12"
+        "detalle-1 detalle-13"
+        "detalle-1 detalle-14"
+        "detalle-2 detalle-15"
+        "detalle-2 detalle-16"
+        "detalle-2 detalle-17"
+        "detalle-2 detalle-18"
+        "detalle-2 detalle-19"
+        "detalle-2 detalle-20"
+        "detalle-2 detalle-21"
+        "detalle-2 detalle-22"
+        "detalle-2 detalle-23"
+        "detalle-2 detalle-24"
+        "detalle-34 detalle-25"
+        "detalle-34 detalle-26"
+        "detalle-34 detalle-27"
+        "detalle-34 detalle-28"
+        "detalle-34 detalle-29"
+        "detalle-34 detalle-30"
+        "detalle-34 detalle-31"
+        "detalle-34 detalle-32"
+        "detalle-34 detalle-33";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .carrito-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 17, auto;
+        grid-template-areas: 
+        "carrito-1"
+        "carrito-2"
+        "carrito-18"
+        "carrito-19"
+        "carrito-3"
+        "carrito-4"
+        "carrito-5"
+        "carrito-6"
+        "carrito-7"
+        "carrito-8"
+        "carrito-9"
+        "carrito-10"
+        "carrito-11"
+        "carrito-12"
+        "carrito-13"
+        "carrito-14"
+        "carrito-15"
+        "carrito-16"
+        "carrito-17";
+        width: 100%;
+        text-decoration: none;
+        font-family: "LibreFranklin", sans-serif;
+        font-size: 1rem; 
+        background-color: black;
+        color: #D9D9D9;
+        justify-items: space-between;
+        align-items: center;
     }
 }
 @media(max-width:1024px){
     .container-tienda{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 4;
+        grid-template-rows: 4, auto;
         grid-template-areas: 
         "article-1 article-2"
         "article-3 article-4"
@@ -826,13 +982,90 @@ footer {
         width: 100%;
         align-items: center;
         justify-items: center;
+    }    
+    .detalle {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 34, auto;
+        grid-template-areas: 
+        "detalle-1"
+        "detalle-2"
+        "detalle-34" 
+        "detalle-3"
+        "detalle-4"
+        "detalle-5"
+        "detalle-6"
+        "detalle-7"
+        "detalle-8"
+        "detalle-9"
+        "detalle-10"
+        "detalle-11"
+        "detalle-12"
+        "detalle-13"
+        "detalle-14"
+        "detalle-15"
+        "detalle-16"
+        "detalle-17"
+        "detalle-18"
+        "detalle-19"
+        "detalle-20"
+        "detalle-21"
+        "detalle-22"
+        "detalle-23"
+        "detalle-24"
+        "detalle-25"
+        "detalle-26"
+        "detalle-27"
+        "detalle-28"
+        "detalle-29"
+        "detalle-30"
+        "detalle-31"
+        "detalle-32"
+        "detalle-33";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
     }
+    .carrito-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 17, auto;
+        grid-template-areas: 
+        "carrito-1"
+        "carrito-2"
+        "carrito-18"
+        "carrito-19"
+        "carrito-3"
+        "carrito-4"
+        "carrito-5"
+        "carrito-6"
+        "carrito-7"
+        "carrito-8"
+        "carrito-9"
+        "carrito-10"
+        "carrito-11"
+        "carrito-12"
+        "carrito-13"
+        "carrito-14"
+        "carrito-15"
+        "carrito-16"
+        "carrito-17";
+        width: 100%;
+        text-decoration: none;
+        font-family: "LibreFranklin", sans-serif;
+        font-size: 1rem; 
+        background-color: black;
+        color: #D9D9D9;
+        justify-items: space-between;
+        align-items: center;
+    }
+
 }
 @media(max-width:768px){
     .container-tienda{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 8;
+        grid-template-rows: 8, auto;
         grid-template-areas: 
         "article-1"
         "article-2"
@@ -846,12 +1079,89 @@ footer {
         align-items: center;
         justify-items: center;
     }
-}
-@media(max-width:425px){
-    .container-tienda{
+    .detalle {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 8;
+        grid-template-rows: 34, auto;
+        grid-template-areas: 
+        "detalle-1"
+        "detalle-2"
+        "detalle-34" 
+        "detalle-3"
+        "detalle-4"
+        "detalle-5"
+        "detalle-6"
+        "detalle-7"
+        "detalle-8"
+        "detalle-9"
+        "detalle-10"
+        "detalle-11"
+        "detalle-12"
+        "detalle-13"
+        "detalle-14"
+        "detalle-15"
+        "detalle-16"
+        "detalle-17"
+        "detalle-18"
+        "detalle-19"
+        "detalle-20"
+        "detalle-21"
+        "detalle-22"
+        "detalle-23"
+        "detalle-24"
+        "detalle-25"
+        "detalle-26"
+        "detalle-27"
+        "detalle-28"
+        "detalle-29"
+        "detalle-30"
+        "detalle-31"
+        "detalle-32"
+        "detalle-33";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .carrito-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 17, auto;
+        grid-template-areas: 
+        "carrito-1"
+        "carrito-2"
+        "carrito-18"
+        "carrito-19"
+        "carrito-3"
+        "carrito-4"
+        "carrito-5"
+        "carrito-6"
+        "carrito-7"
+        "carrito-8"
+        "carrito-9"
+        "carrito-10"
+        "carrito-11"
+        "carrito-12"
+        "carrito-13"
+        "carrito-14"
+        "carrito-15"
+        "carrito-16"
+        "carrito-17";
+        width: 100%;
+        text-decoration: none;
+        font-family: "LibreFranklin", sans-serif;
+        font-size: 1rem; 
+        background-color: black;
+        color: #D9D9D9;
+        justify-items: space-between;
+        align-items: center;
+    }
+
+}
+@media(max-width:425px){
+    .container-tienda {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8, auto;
         grid-template-areas: 
         "article-1"
         "article-2"
@@ -864,13 +1174,89 @@ footer {
         width: 100%;
         align-items: center;
         justify-items: center;
+    }
+    .detalle {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 34, auto;
+        grid-template-areas: 
+        "detalle-1"
+        "detalle-2"
+        "detalle-34" 
+        "detalle-3"
+        "detalle-4"
+        "detalle-5"
+        "detalle-6"
+        "detalle-7"
+        "detalle-8"
+        "detalle-9"
+        "detalle-10"
+        "detalle-11"
+        "detalle-12"
+        "detalle-13"
+        "detalle-14"
+        "detalle-15"
+        "detalle-16"
+        "detalle-17"
+        "detalle-18"
+        "detalle-19"
+        "detalle-20"
+        "detalle-21"
+        "detalle-22"
+        "detalle-23"
+        "detalle-24"
+        "detalle-25"
+        "detalle-26"
+        "detalle-27"
+        "detalle-28"
+        "detalle-29"
+        "detalle-30"
+        "detalle-31"
+        "detalle-32"
+        "detalle-33";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .carrito-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 17, auto;
+        grid-template-areas: 
+        "carrito-1"
+        "carrito-2"
+        "carrito-18"
+        "carrito-19"
+        "carrito-3"
+        "carrito-4"
+        "carrito-5"
+        "carrito-6"
+        "carrito-7"
+        "carrito-8"
+        "carrito-9"
+        "carrito-10"
+        "carrito-11"
+        "carrito-12"
+        "carrito-13"
+        "carrito-14"
+        "carrito-15"
+        "carrito-16"
+        "carrito-17";
+        width: 100%;
+        text-decoration: none;
+        font-family: "LibreFranklin", sans-serif;
+        font-size: 1rem; 
+        background-color: black;
+        color: #D9D9D9;
+        justify-items: space-between;
+        align-items: center;
     }
 }
 @media(max-width:375px){
     .container-tienda{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 8;
+        grid-template-rows: 8, auto;
         grid-template-areas: 
         "article-1"
         "article-2"
@@ -889,7 +1275,7 @@ footer {
     .container-tienda{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 8;
+        grid-template-rows: 8, auto;
         grid-template-areas: 
         "article-1"
         "article-2"
@@ -903,6 +1289,83 @@ footer {
         align-items: center;
         justify-items: center;
     }
+    .detalle {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33, auto;
+        grid-template-areas: 
+        "detalle-1"
+        "detalle-2"
+        "detalle-34" 
+        "detalle-3"
+        "detalle-4"
+        "detalle-5"
+        "detalle-6"
+        "detalle-7"
+        "detalle-8"
+        "detalle-9"
+        "detalle-10"
+        "detalle-11"
+        "detalle-12"
+        "detalle-13"
+        "detalle-14"
+        "detalle-15"
+        "detalle-16"
+        "detalle-17"
+        "detalle-18"
+        "detalle-19"
+        "detalle-20"
+        "detalle-21"
+        "detalle-22"
+        "detalle-23"
+        "detalle-24"
+        "detalle-25"
+        "detalle-26"
+        "detalle-27"
+        "detalle-28"
+        "detalle-29"
+        "detalle-30"
+        "detalle-31"
+        "detalle-32"
+        "detalle-33";
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .carrito-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 17, auto;
+        grid-template-areas: 
+        "carrito-1"
+        "carrito-2"
+        "carrito-18"
+        "carrito-19"
+        "carrito-3"
+        "carrito-4"
+        "carrito-5"
+        "carrito-6"
+        "carrito-7"
+        "carrito-8"
+        "carrito-9"
+        "carrito-10"
+        "carrito-11"
+        "carrito-12"
+        "carrito-13"
+        "carrito-14"
+        "carrito-15"
+        "carrito-16"
+        "carrito-17";
+        width: 100%;
+        text-decoration: none;
+        font-family: "LibreFranklin", sans-serif;
+        font-size: 1rem; 
+        background-color: black;
+        color: #D9D9D9;
+        justify-items: space-between;
+        align-items: center;
+    }
+
 }
     4k : 2560px
     laptop L: 1440px
